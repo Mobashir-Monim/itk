@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.transit {
+	@apply transition-all duration-300 ease-linear;
+}
+
 body {
-	@apply bg-slate-700 text-white;
+	@apply bg-slate-700 text-white transit;
 }
