@@ -2,10 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: 'Nunito';
+	src: url('./lib/assets/fonts/Nunito-VariableFont_wght.ttf');
+}
+
 .transit {
 	@apply transition-all duration-300 ease-linear;
 }
 
 body {
-	@apply bg-slate-700 text-white transit;
+	@apply bg-slate-700 text-white transit font-[Nunito] tracking-wider font-light;
+}
+
+.nsb::-webkit-scrollbar {
+	display: none !important;
+}
+
+.nsb {
+	-ms-overflow-style: none !important;
+	scrollbar-width: none !important;
 }
