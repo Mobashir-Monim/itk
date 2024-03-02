@@ -1,17 +1,16 @@
-import type { NavItemType } from '$lib/types/nav';
+import type { NavItemConstructorType, NavItemType } from '$lib/types/nav';
 
 class NavItem implements NavItemType {
 	name: string;
 	type: 'function' | 'route' | 'placeholder';
 	display?: (() => boolean) | undefined;
 	subItems: NavItemType[];
-	expanded: boolean;
+	expanded: boolean = false;
 
-	constructor({ name, type, display, subItems = [], expanded = false }: NavItemType) {
+	constructor({ name, type, display, subItems = [] }: NavItemConstructorType) {
 		this.name = name;
 		this.type = type;
 		this.subItems = subItems;
-		this.expanded = expanded;
 
 		if (display) this.display = display;
 	}

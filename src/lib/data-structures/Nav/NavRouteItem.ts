@@ -1,12 +1,12 @@
-import type { NavRouteItemType } from '$lib/types/nav';
+import type { NavRouteItemType,NavRouteConstructorItemType } from '$lib/types/nav';
 import NavItem from './NavItem';
 
 class NavRouteItem extends NavItem implements NavRouteItemType {
 	route: string;
 	params: string[];
 
-	constructor({ name, display, subItems = [], route, params }: NavRouteItemType) {
-		super({ name, type: 'route', display, subItems, expanded: false });
+	constructor({ name, display, subItems = [], route, params }: NavRouteConstructorItemType) {
+		super({ name, type: 'route', display, subItems });
 		this.route = route;
 		this.params = params;
 	}
