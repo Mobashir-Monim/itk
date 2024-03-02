@@ -6,7 +6,7 @@ class NavItem implements NavItemType {
 	type: 'function' | 'route' | 'placeholder';
 	display: () => boolean;
 	subItems: NavItemType[];
-	expanded: boolean = false;
+	expanded: boolean;
 	route?: string | undefined;
 	params?: Record<string, string> | undefined;
 	call?: (() => any) | undefined;
@@ -23,6 +23,7 @@ class NavItem implements NavItemType {
 		this.name = name;
 		this.type = type;
 		this.subItems = subItems;
+		this.expanded = false;
 		this.display = display;
 
 		if (type === 'route' && (!route || !params))
