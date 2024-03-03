@@ -4,6 +4,14 @@ import { dhikrNavItem } from './dhikr';
 import type { NavItemType } from '$lib/types/nav';
 import NavItem from '$lib/data-structures/Nav/NavItem';
 
+const homeNavItem: NavItem = new NavItem({
+	name: 'Home',
+	type: 'route',
+	route: '/',
+	params: {},
+	subItems: []
+});
+
 const settingsNavItem: NavItem = new NavItem({
 	name: 'Settings',
 	type: 'route',
@@ -21,9 +29,10 @@ const creditsNavItem: NavItem = new NavItem({
 });
 
 export const navItems: NavItemType[] = [
+    homeNavItem,
 	quranNavItem,
 	namesOfAllahNavItem,
 	dhikrNavItem,
 	settingsNavItem,
-    creditsNavItem
+	creditsNavItem
 ];
