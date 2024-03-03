@@ -35,16 +35,18 @@
 >
 	<div
 		class="h-[60px] !z-40 flex flex-row px-3 transit {expanded
-			? 'bg-slate-800 border-white'
-			: 'bg-slate-200/10 border-transparent'}"
+			? 'bg-blue-700/30'
+			: 'bg-blue-500/30'} "
 	>
 		<button
 			type="button"
 			on:click={toggleExpansion}
-			class="border-2 flex flex-row gap-1 justify-between p-0.5 my-auto ml-auto rounded-lg w-[40px] h-[40px] delay-0"
+			class="flex flex-row gap-1 justify-between my-auto ml-auto rounded-lg w-[40px] h-[40px] delay-0 transit {expanded
+				? 'bg-teal-600/70'
+				: 'bg-teal-400/70'}"
 			use:autoAnimate
 		>
-			<div class="flex {expanded ? 'flex-row' : 'flex-row-reverse'}">
+			<div class="flex m-auto {expanded ? 'flex-row' : 'flex-row-reverse'}">
 				<MenuIcon size={expanded ? 0 : iconSize} />
 				<MenuOpenIcon size={expanded ? iconSize : 0} />
 			</div>
