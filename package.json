@@ -39,6 +39,7 @@
     "@capacitor/core": "^5.7.1",
     "@capacitor/ios": "^5.7.1",
     "@capacitor/preferences": "^5.0.7",
-    "@formkit/auto-animate": "^0.8.1"
+    "@formkit/auto-animate": "^0.8.1",
+    "@sveltejs/adapter-static": "^3.0.1"
   }
 }

@@ -5,6 +5,7 @@
 	import NunitoFont from '$lib/assets/fonts/Nunito-VariableFont_wght.ttf';
 
 	export let data;
+	export const prerender = true;
 </script>
 
 <svelte:head>
@@ -13,7 +14,7 @@
 
 <main class="w-full transit relative">
 	<TopNav />
-    <div class="h-[60px]"></div>
+	<div class="h-[60px]"></div>
 	{#key data.url}
 		<div
 			class="w-full h-[calc(100vh-140px)] p-5 overflow-y-auto nsb"
