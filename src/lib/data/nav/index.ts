@@ -8,7 +8,15 @@ const settingsNavItem: NavItem = new NavItem({
 	name: 'Settings',
 	type: 'route',
 	route: '/settings',
-	params: [],
+	params: {},
+	subItems: []
+});
+
+const creditsNavItem: NavItem = new NavItem({
+	name: 'Credits',
+	type: 'route',
+	route: '/credits',
+	params: {},
 	subItems: []
 });
 
@@ -16,5 +24,6 @@ export const navItems: NavItemType[] = [
 	quranNavItem,
 	namesOfAllahNavItem,
 	dhikrNavItem,
-	settingsNavItem
+	settingsNavItem,
+    creditsNavItem
 ];

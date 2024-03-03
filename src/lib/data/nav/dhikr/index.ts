@@ -4,7 +4,7 @@ const dhikrList: NavItem = new NavItem({
 	name: 'Dhikr List',
 	type: 'route',
 	route: '/dhikr',
-	params: [],
+	params: {},
 	subItems: []
 });
 
@@ -12,7 +12,7 @@ const dhikrBookmarks: NavItem = new NavItem({
 	name: 'Bookmarks',
 	type: 'route',
 	route: '/dhikr/bookmarks',
-	params: [],
+	params: {},
 	subItems: []
 });
 

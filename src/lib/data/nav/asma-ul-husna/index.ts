@@ -4,7 +4,7 @@ const namesOfAllahList: NavItem = new NavItem({
 	name: 'List',
 	type: 'route',
 	route: '/asma-ul-husna',
-	params: [],
+	params: {},
 	subItems: []
 });
 
@@ -12,7 +12,7 @@ const namesOfAllahQuiz: NavItem = new NavItem({
 	name: 'Quiz',
 	type: 'route',
 	route: '/asma-ul-husna/quiz',
-	params: [],
+	params: {},
 	subItems: []
 });
 
@@ -20,7 +20,7 @@ const namesOfAllahBookmarks: NavItem = new NavItem({
 	name: 'Bookmarks',
 	type: 'route',
 	route: '/asma-ul-husna/bookmarks',
-	params: [],
+	params: {},
 	subItems: []
 });
 

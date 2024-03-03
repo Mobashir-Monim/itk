@@ -11,7 +11,7 @@ const viewQuranChapters: NavItem = new NavItem({
 	name: 'Chapters/Surah list',
 	type: 'route',
 	route: '/quran/surahs',
-	params: [],
+	params: {},
 	subItems: []
 });
 
@@ -19,7 +19,7 @@ const quranBookmarks: NavItem = new NavItem({
 	name: 'Bookmarks',
 	type: 'route',
 	route: '/quran/bookmarks',
-	params: [],
+	params: {},
 	subItems: []
 });
 
