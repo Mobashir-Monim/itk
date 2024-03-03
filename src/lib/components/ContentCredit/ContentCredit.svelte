@@ -4,7 +4,7 @@
 	export let credit: ContentCreditType;
 </script>
 
-<div class="w-full flex flex-col gap-2 p-5 bg-slate-50/10 rounded-xl">
+<div class="w-full flex flex-col gap-2 p-5 bg-blue-400/20 rounded-xl">
 	<div class="">
 		<h3 class="text-[2rem] w-full text-center">{credit.name}</h3>
 		{#if credit.url}
@@ -14,7 +14,7 @@
 		{/if}
 	</div>
 	<div
-		class="w-full max-w-[450px] mx-auto text-[0.8rem] flex flex-col gap-2.5 p-2.5 bg-slate-50/10 rounded-xl"
+		class="w-full max-w-[450px] mx-auto text-[0.8rem] flex flex-col gap-2.5 p-2.5 bg-teal-400/20 rounded-xl"
 	>
 		<p class="text-center">Source for:</p>
 		<ul style="!list-disc">
