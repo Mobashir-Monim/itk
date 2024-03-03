@@ -26,10 +26,18 @@ class NavItem implements NavItemType {
 		this.expanded = false;
 		this.display = display;
 
-		if (type === 'route' && (!route || !params))
+		if (type === 'route' && (!route || !params)) {
 			throw new Error('Route and params must be passed for route type');
+		} else {
+			this.route = route;
+			this.params = params;
+		}
 
-		if (type === 'function' && !call) throw new Error('Call must be passed for route type');
+		if (type === 'function' && !call) {
+			throw new Error('Call must be passed for route type');
+		} else {
+			this.call = call;
+		}
 	}
 
 	toggleExpansion() {

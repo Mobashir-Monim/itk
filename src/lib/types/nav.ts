@@ -18,6 +18,6 @@ export interface NavItemConstructorType {
 	display?: () => boolean;
 	subItems: NavItemType[];
 	route?: string;
-	params?: string[];
+	params?: Record<string, string>;
 	call?: () => any | void;
 }
