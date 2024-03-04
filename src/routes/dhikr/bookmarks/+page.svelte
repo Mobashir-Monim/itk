@@ -2,4 +2,4 @@
     import FeatureComingSoon from "$lib/components/FeatureComingSoon/FeatureComingSoon.svelte"
 </script>
 
-<FeatureComingSoon feature="Quran Bookmarks" />
+<FeatureComingSoon feature="Dhikr Bookmarks" />
