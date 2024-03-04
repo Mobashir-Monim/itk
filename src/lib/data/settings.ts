@@ -1,7 +1,7 @@
 import SettingsBlock from '$lib/data-structures/Settings/SettingsBlock';
 
-export const buildSettings = () => {
-	let quranSettingsBlock = new SettingsBlock({
+export const buildQuranSettingsBlock = () =>
+	new SettingsBlock({
 		name: 'Quran',
 		key: 'quran',
 		items: [
@@ -15,15 +15,16 @@ export const buildSettings = () => {
 				key: 'transliteration',
 				type: 'toggle'
 			},
-			{
-				name: 'Show Translation',
-				key: 'translation',
-				type: 'toggle'
-			}
+			// {
+			// 	name: 'Show Translation',
+			// 	key: 'translation',
+			// 	type: 'toggle'
+			// }
 		]
 	});
 
-	let namesOfAllahSettingsBlock = new SettingsBlock({
+export const buildNamesOfAllahSettingsBlock = () =>
+	new SettingsBlock({
 		name: 'Names of Allah',
 		key: 'names-of-allah',
 		items: [
@@ -35,7 +36,8 @@ export const buildSettings = () => {
 		]
 	});
 
-	let dhikrSettingsBlock = new SettingsBlock({
+export const buildDhikrSettingsBlock = () =>
+	new SettingsBlock({
 		name: 'Dhikr',
 		key: 'dhikr',
 		items: [
@@ -49,11 +51,11 @@ export const buildSettings = () => {
 				key: 'transliteration',
 				type: 'toggle'
 			},
-			{
-				name: 'Show Translation',
-				key: 'translation',
-				type: 'toggle'
-			},
+			// {
+			// 	name: 'Show Translation',
+			// 	key: 'translation',
+			// 	type: 'toggle'
+			// },
 			{
 				name: 'Show Benefits',
 				key: 'benefits',
@@ -62,5 +64,8 @@ export const buildSettings = () => {
 		]
 	});
 
-	return [quranSettingsBlock, namesOfAllahSettingsBlock, dhikrSettingsBlock];
-};
+export const buildSettings = () => [
+	buildQuranSettingsBlock(),
+	buildNamesOfAllahSettingsBlock(),
+	buildDhikrSettingsBlock()
+];
