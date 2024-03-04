@@ -4,7 +4,7 @@ import type { NavItemConstructorType, NavItemType } from '$lib/types/nav';
 class NavItem implements NavItemType {
 	name: string;
 	type: 'function' | 'route' | 'placeholder';
-	display: () => boolean;
+	display: () => Promise<boolean>;
 	subItems: NavItemType[];
 	expanded: boolean;
 	route?: string | undefined;
@@ -14,7 +14,10 @@ class NavItem implements NavItemType {
 	constructor({
 		name,
 		type,
-		display = () => true,
+		display = () =>
+			new Promise((resolve, _) => {
+				resolve(true);
+			}),
 		subItems = [],
 		call,
 		route,
@@ -58,11 +61,11 @@ class NavItem implements NavItemType {
 		return '';
 	}
 
-	executeClick() {
+	async executeClick() {
 		if (this.type === 'route') {
 			goto(this.getRoute());
 		} else if (this.call && this.type === 'function') {
-			return this.call();
+			return await this.call();
 		} else {
 			this.toggleExpansion();
 		}

@@ -1,7 +1,7 @@
 export interface NavItemType {
 	name: string;
 	type: 'route' | 'function' | 'placeholder';
-	display: () => boolean;
+	display: () => Promise<boolean>;
 	expanded: boolean;
 	toggleExpansion: () => void;
 	subItems: NavItemType[];
@@ -15,7 +15,7 @@ export interface NavItemType {
 export interface NavItemConstructorType {
 	name: string;
 	type: 'route' | 'function' | 'placeholder';
-	display?: () => boolean;
+	display?: () => Promise<boolean>;
 	subItems: NavItemType[];
 	route?: string;
 	params?: Record<string, string>;

@@ -17,7 +17,7 @@
 	<div class="h-[60px]"></div>
 	{#key data.url}
 		<div
-			class="w-full h-[calc(100vh-60px)] p-5 overflow-y-auto nsb"
+			class="w-full h-[calc(100vh-60px)] px-5 pt-2.5 overflow-y-auto nsb relative max-w-[750px] mx-auto"
 			out:fly={{ x: 200, duration: 300 }}
 			in:fly={{ x: -200, duration: 300, delay: 300 }}
 		>

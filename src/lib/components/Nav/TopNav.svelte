@@ -54,12 +54,12 @@
 	</div>
 
 	<div
-		class="h-[calc(100vh-60px)] transit relative bg-slate-800/90 max-w-[500px] {expanded
+		class="h-[calc(100vh-60px)] transit relative bg-slate-800/90 overflow-y-auto nsb max-w-[500px] {expanded
 			? 'w-[100vw]'
 			: 'w-[0vw]'}"
 	>
 		<div
-			class="flex flex-col gap-5 p-10 overflow-hidden transit !duration-200 {expanded
+			class="flex flex-col gap-5 p-10 overflow-x-hidden overflow-y-auto transit !duration-200 {expanded
 				? 'text-white text-[1.5rem] delay-200'
 				: 'text-transparent text-[0rem]'}"
 			use:autoAnimate
