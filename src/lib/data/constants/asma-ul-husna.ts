@@ -1,18 +1,22 @@
-export interface NameType {
+export interface AllahsNameType {
+	arabic: string;
 	name: string;
 	meanings: string[];
 }
 
-export const namesOfAllahAzzaWaJal: NameType[] = [
+export const namesOfAllahAzzaWaJal: AllahsNameType[] = [
 	{
+		arabic: 'الرَّحْمَنُ',
 		name: 'Ar-Rahman',
 		meanings: ['The Beneficent', 'He who will goodness and mercy for all His creatures']
 	},
 	{
+		arabic: '',
 		name: 'Ar-Raheem',
 		meanings: ['The Merciful', 'He who acts with extreme kindness']
 	},
 	{
+		arabic: '',
 		name: 'Al-Malik',
 		meanings: [
 			'The King',
@@ -22,6 +26,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Quddus',
 		meanings: [
 			'The Most Sacred',
@@ -31,6 +36,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'As-Salam',
 		meanings: [
 			'The Giver of Peace',
@@ -39,6 +45,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Mumin',
 		meanings: [
 			'The Infuser of Faith',
@@ -47,14 +54,17 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Muhaymin',
 		meanings: ['The Guardian', 'The One who witnesses the saying and deeds of His creatures.']
 	},
 	{
+		arabic: '',
 		name: 'Al-Aziz',
 		meanings: ['The Mighty One', 'The Strong', 'The Defeater who is not defeated']
 	},
 	{
+		arabic: '',
 		name: 'Al-Jabbar',
 		meanings: [
 			'The All Compelling',
@@ -62,6 +72,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Mutakabbir',
 		meanings: [
 			'The Dominant One',
@@ -69,18 +80,22 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Khaliq',
 		meanings: ['The Creator', 'The one who brings everything from non-existence to existence']
 	},
 	{
+		arabic: '',
 		name: 'Al-Bari',
 		meanings: ['The Evolver', 'The Maker', 'The Creator who has the Power to turn the entities']
 	},
 	{
+		arabic: '',
 		name: 'Al-Musawwir',
 		meanings: ['The Flawless Shaper', 'The One who forms His creatures in different pictures']
 	},
 	{
+		arabic: '',
 		name: 'Al-Ghaffar',
 		meanings: [
 			'The Great Forgiver',
@@ -89,6 +104,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Qahhar',
 		meanings: [
 			'The All-Prevailing One',
@@ -97,6 +113,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Wahhab',
 		meanings: [
 			'The Supreme Bestower',
@@ -105,10 +122,12 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Ar-Razzaq',
 		meanings: ['The Total Provider', 'The Sustainer', 'The Provider']
 	},
 	{
+		arabic: '',
 		name: 'Al-Fattah',
 		meanings: [
 			'The Opener',
@@ -119,6 +138,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Alim',
 		meanings: [
 			'The All-Knowing One',
@@ -127,6 +147,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Qabid',
 		meanings: [
 			'The Restricting One',
@@ -136,6 +157,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Basit',
 		meanings: [
 			'The Extender',
@@ -144,6 +166,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Khafid',
 		meanings: [
 			'The Reducer',
@@ -152,6 +175,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Ar-Rafi',
 		meanings: [
 			'The Elevating One',
@@ -161,6 +185,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: "Al-Mu'izz",
 		meanings: [
 			'The Honour-Bestower',
@@ -169,6 +194,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Muzil',
 		meanings: [
 			'The Abaser',
@@ -179,6 +205,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'As-Sami',
 		meanings: [
 			'The All-Hearer',
@@ -187,6 +214,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Baseer',
 		meanings: [
 			'The All-Seeing',
@@ -195,6 +223,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Hakam',
 		meanings: [
 			'The Impartial Judge',
@@ -205,6 +234,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Adl',
 		meanings: [
 			'The Embodiment of Justice',
@@ -213,6 +243,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Lateef',
 		meanings: [
 			'The Knower of Subtleties',
@@ -222,10 +253,12 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'AL-Khabir',
 		meanings: ['The All-Aware One', 'The One Who knows the truth of things']
 	},
 	{
+		arabic: '',
 		name: 'Al-Haleem',
 		meanings: [
 			'The Clement One',
@@ -234,6 +267,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Azeem',
 		meanings: [
 			'The Magnificent One',
@@ -243,10 +277,12 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Ghafoor',
 		meanings: ['The All-Forgiving', 'The Forgiving', 'The One Who forgives a lot']
 	},
 	{
+		arabic: '',
 		name: 'Ash-Shakur',
 		meanings: [
 			'The Grateful',
@@ -255,6 +291,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Aliyy',
 		meanings: [
 			'The Sublime One',
@@ -263,6 +300,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Kabeer',
 		meanings: [
 			'The Great one',
@@ -271,6 +309,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Hafiz',
 		meanings: [
 			'The Guarding One',
@@ -280,14 +319,17 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Muqeet',
 		meanings: ['The Sustaining One', 'The Guardian', 'The Feeder', 'The One Who has the Power']
 	},
 	{
+		arabic: '',
 		name: 'Al-Haseeb',
 		meanings: ['The Reckoning One', 'The Reckoner', 'The One Who gives the satisfaction']
 	},
 	{
+		arabic: '',
 		name: 'Al-Jaleel',
 		meanings: [
 			'The Majestic One',
@@ -296,6 +338,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'AL-Karim',
 		meanings: [
 			'The Bountiful One',
@@ -305,6 +348,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Ar-Raqib',
 		meanings: [
 			'The Watchful One',
@@ -313,6 +357,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Mujeeb',
 		meanings: [
 			'The Responding One',
@@ -322,10 +367,12 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Wasi',
 		meanings: ['The All-Pervading One', 'The Vast', 'The All-Embracing', 'The Knowledgeable']
 	},
 	{
+		arabic: '',
 		name: 'Al-Hakeem',
 		meanings: [
 			'The Wise One',
@@ -335,10 +382,12 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'AL-Wadud',
 		meanings: ['The Loving One', 'The Most Loving', 'The Most Affectionate', 'The Beloved']
 	},
 	{
+		arabic: '',
 		name: 'Al-Majeed',
 		meanings: [
 			'The Glorious One',
@@ -347,18 +396,22 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: "Al-Ba'ith",
 		meanings: ['The Infuser of New Life', 'The Awakener', 'The Resurrector', 'The Arouser']
 	},
 	{
+		arabic: '',
 		name: 'Ash-Shaheed',
 		meanings: ['The All Observing Witness', 'THe Witness', 'The One from Whom nothing is absent']
 	},
 	{
+		arabic: '',
 		name: 'Al-Haqq',
 		meanings: ['The Embodiment of Truth', 'The Truth', 'The True', 'The One Who truly Exists']
 	},
 	{
+		arabic: '',
 		name: 'Al-Wakeel',
 		meanings: [
 			'The Universal Trustee',
@@ -367,10 +420,12 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Qawiyy',
 		meanings: ['The Strong One', 'The Most Strong', 'The Strong', 'The One with the complete Power']
 	},
 	{
+		arabic: '',
 		name: 'Al-Matin',
 		meanings: [
 			'The Firm One',
@@ -378,10 +433,12 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Waliy',
 		meanings: ['The Protecting Associate', 'The Protecting Friend', 'The Supporter']
 	},
 	{
+		arabic: '',
 		name: 'Al-Hameed',
 		meanings: [
 			'The Sole-Laudable One',
@@ -390,6 +447,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Muhsi',
 		meanings: [
 			'The All-Enumerating One',
@@ -399,10 +457,12 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Mubdi',
 		meanings: ['The Originator', 'The One Who created human beings']
 	},
 	{
+		arabic: '',
 		name: 'Al-Muid',
 		meanings: [
 			'The Restorer',
@@ -411,10 +471,12 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Muhyi',
 		meanings: ['The Maintainer of life', 'The Restorer', 'The Giver of Life']
 	},
 	{
+		arabic: '',
 		name: 'Al-Mumeet',
 		meanings: [
 			'The Inflictor of Death',
@@ -424,6 +486,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Hayy',
 		meanings: [
 			'The Eternally Living One',
@@ -432,6 +495,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Qayyum',
 		meanings: [
 			'The Self-Subsisting One',
@@ -440,22 +504,23 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Wajid',
 		meanings: ['The Pointing One', 'The Perceiver', 'The Finder', 'The Rich who is never poor']
 	},
 	{
+		arabic: '',
 		name: 'Al-Maajid',
 		meanings: ['The All-Noble One', 'The Glorious', 'He Who is Most Glorious']
 	},
 	{
+		arabic: '',
 		name: 'Al-Wahid',
 		meanings: ['The Only One', 'The Unique', 'The One', 'The One without a partner']
 	},
+	{ arabic: '', name: 'Al-Ahad', meanings: ['The Sole One', 'The One'] },
 	{
-		name: 'Al-Ahad',
-		meanings: ['The Sole One', 'The One']
-	},
-	{
+		arabic: '',
 		name: 'As-Samad',
 		meanings: [
 			'The Supreme Provider',
@@ -466,10 +531,12 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Qadir',
 		meanings: ['The All-Powerful', 'The Able', 'The Capable', 'The One attributed with Power']
 	},
 	{
+		arabic: '',
 		name: 'Al-Muqtadir',
 		meanings: [
 			'The All Authoritative One',
@@ -479,6 +546,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Muqaddim',
 		meanings: [
 			'The Expediting One',
@@ -488,6 +556,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Muakhkhir',
 		meanings: [
 			'The Delayer',
@@ -497,18 +566,22 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Awwal',
 		meanings: ['The Very First', 'The First', 'The One Whose Existence is without a beginning']
 	},
 	{
+		arabic: '',
 		name: 'Al-Akhir',
 		meanings: ['The Infinite Last One', 'The Last', 'The One Whose Existence is without an end']
 	},
 	{
+		arabic: '',
 		name: 'Az-Zaahir',
 		meanings: ['The Perceptible', 'The Manifest', 'The Conspicuous', 'The Evident']
 	},
 	{
+		arabic: '',
 		name: 'Al-Baatin',
 		meanings: [
 			'The Imperceptible',
@@ -519,6 +592,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Wali',
 		meanings: [
 			'The Holder of Supreme Authority',
@@ -527,6 +601,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Mutaali',
 		meanings: [
 			'The Extremely Exalted One',
@@ -536,6 +611,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Barr',
 		meanings: [
 			'The Fountain-Head of Truth',
@@ -545,6 +621,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'At-Tawwab',
 		meanings: [
 			'The Ever-Acceptor of Repentance',
@@ -554,14 +631,17 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Muntaqim',
 		meanings: ['The Retaliator', 'The Avenger', 'The Disapprover', 'The Inflictor of Retribution']
 	},
 	{
+		arabic: '',
 		name: 'Al-Afuw',
 		meanings: ['The Supreme Pardoner', 'The Pardoner', 'The Forgiver', 'The Eliminator of Sins']
 	},
 	{
+		arabic: '',
 		name: 'Ar-Rauf',
 		meanings: [
 			'The Benign One',
@@ -571,6 +651,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Malikul-Mulk',
 		meanings: [
 			'The Eternal Possessor of Sovereignty',
@@ -578,14 +659,17 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Dhul-Jalaali-Wal-Ikram',
 		meanings: ['The Possessor of Majesty and Honour', 'The Lord of Majesty and Bounty']
 	},
 	{
+		arabic: '',
 		name: 'Al-Muqsit',
 		meanings: ['The Just One', 'The Equitable', 'The One Who is Just in His judgement']
 	},
 	{
+		arabic: '',
 		name: 'Al-Jami',
 		meanings: [
 			'The Assembler of Scattered Creations',
@@ -594,10 +678,12 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Ghaniy',
 		meanings: ['The Self-Sufficient One', 'The One Who does not need the creation']
 	},
 	{
+		arabic: '',
 		name: 'Al-Mughni',
 		meanings: [
 			'The Enricher',
@@ -606,11 +692,9 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 			'The Bestower of Wealth'
 		]
 	},
+	{ arabic: '', name: 'Al-Mani', meanings: ['The Preventer', 'The Withholder'] },
 	{
-		name: 'Al-Mani',
-		meanings: ['The Preventer', 'The Withholder']
-	},
-	{
+		arabic: '',
 		name: 'Ad-Darr',
 		meanings: [
 			'The Distressor',
@@ -622,6 +706,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'An-Naafi',
 		meanings: [
 			'The Bestower of Benefits',
@@ -631,15 +716,14 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 			'The Auspicious'
 		]
 	},
+	{ arabic: '', name: 'An-Noor', meanings: ['The Prime Light', 'The Light', 'The One Who guides'] },
 	{
-		name: 'An-Noor',
-		meanings: ['The Prime Light', 'The Light', 'The One Who guides']
-	},
-	{
+		arabic: '',
 		name: 'Al-Hadi',
 		meanings: ['The Provider of Guidance', 'The Guide', 'The Leader', 'The Guide of the Right Path']
 	},
 	{
+		arabic: '',
 		name: 'Al-Badi',
 		meanings: [
 			'The Unique One',
@@ -648,14 +732,17 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'Al-Baaqi',
 		meanings: ['The Ever Surviving One', 'The Everlasting', 'The Ever-Enduring', 'The Ever-Present']
 	},
 	{
+		arabic: '',
 		name: 'Al-Warith',
 		meanings: ['The Eternal Inheritor', 'The Heir', 'The One Whose Existence remains']
 	},
 	{
+		arabic: '',
 		name: 'Ar-Rasheed',
 		meanings: [
 			'The Guide to Path of Rectitude',
@@ -664,6 +751,7 @@ export const namesOfAllahAzzaWaJal: NameType[] = [
 		]
 	},
 	{
+		arabic: '',
 		name: 'As-Sabur',
 		meanings: [
 			'The Extensively Enduring One',
