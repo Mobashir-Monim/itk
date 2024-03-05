@@ -29,7 +29,7 @@ const continueReadingQuran: NavItem = new NavItem({
 const viewQuranChapters: NavItem = new NavItem({
 	name: 'Chapters/Surah list',
 	type: 'route',
-	route: '/quran/surahs',
+	route: '/quran',
 	params: {},
 	subItems: []
 });
