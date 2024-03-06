@@ -4,9 +4,15 @@
 	import Nav from '$lib/components/Nav/Nav.svelte';
 	import NunitoFont from '$lib/assets/fonts/Nunito-VariableFont_wght.ttf';
 	import Modal from '$lib/components/Modal/Modal.svelte';
+	import { onMount } from 'svelte';
+	import { StatusBar, Style } from '@capacitor/status-bar';
 
 	export let data;
 	export const prerender = true;
+
+	onMount(async () => {
+        await StatusBar.hide();
+    });
 </script>
 
 <svelte:head>
