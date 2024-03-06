@@ -28,16 +28,16 @@
 </script>
 
 <div class="flex flex-col gap-5 w-full h-full justify-center" use:autoAnimate>
-	<div class="flex flex-col gap-5 bg-blue-500/30 p-5 rounded-2xl w-full max-w-[500px]">
+	<div class="flex flex-col gap-5 bg-blue-500/30 p-5 rounded-2xl w-full max-w-[500px] mx-auto">
 		<h1 class="text-[2rem] text-center mb-14">Islamic ToolKit</h1>
-		<a href="/quran" class="text-[1.2rem] btn !bg-teal-400/50">Quran</a>
+		<a href="/quran" class="text-[1.2rem] btn !bg-teal-500/50">Quran</a>
 		{#if showContinueReadingQuran}
-			<button on:click={continueReading} class="text-[1.2rem] btn !bg-teal-400/50">
+			<button on:click={continueReading} class="text-[1.2rem] btn !bg-teal-500/50">
 				Continue reading Quran
 			</button>
 		{/if}
-		<a href="/asma-ul-husna" class="text-[1.2rem] btn !bg-teal-400/50">Names of Allah</a>
-		<a href="/settings" class="text-[1.2rem] btn !bg-teal-400/50">Settings</a>
+		<a href="/asma-ul-husna" class="text-[1.2rem] btn !bg-teal-500/50">Names of Allah</a>
+		<a href="/settings" class="text-[1.2rem] btn !bg-teal-500/50">Settings</a>
 
 		<a href="/credits" class="text-center mt-10">Credits</a>
 	</div>
