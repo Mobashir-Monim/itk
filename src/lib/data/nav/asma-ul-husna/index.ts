@@ -1,7 +1,7 @@
 import NavItem from '$lib/data-structures/Nav/NavItem';
 
 const namesOfAllahList: NavItem = new NavItem({
-	name: 'List',
+	name: 'All Names',
 	type: 'route',
 	route: '/asma-ul-husna',
 	params: {},
@@ -9,7 +9,7 @@ const namesOfAllahList: NavItem = new NavItem({
 });
 
 const namesOfAllahQuiz: NavItem = new NavItem({
-	name: 'Quiz',
+	name: 'Quiz Game',
 	type: 'route',
 	route: '/asma-ul-husna/quiz',
 	params: {},
