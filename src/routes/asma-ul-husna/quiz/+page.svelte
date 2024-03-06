@@ -43,13 +43,15 @@
 	};
 
 	const confirmChoice = () => {
-		modalStore.set({
-			component: NamesOfAllahQuizResult,
-			params: {
-				name: selctedName,
-				isCorrect: () => selctedName.meanings.includes(options[selectedOption as number])
-			}
-		});
+		if (selectedOption !== undefined) {
+			modalStore.set({
+				component: NamesOfAllahQuizResult,
+				params: {
+					name: selctedName,
+					isCorrect: () => selctedName.meanings.includes(options[selectedOption as number])
+				}
+			});
+		}
 	};
 
 	modalStore.subscribe((m) => {
@@ -88,5 +90,7 @@
 		{/each}
 	</div>
 
-	<button on:click={confirmChoice} class="btn !bg-teal-600 mx-auto min-w-[50%] max-w-[500px]">Confirm</button>
+	<button on:click={confirmChoice} class="btn !bg-teal-600 mx-auto min-w-[50%] max-w-[500px]"
+		>Confirm</button
+	>
 </div>
