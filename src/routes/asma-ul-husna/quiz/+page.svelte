@@ -61,7 +61,7 @@
 	});
 </script>
 
-<div class="flex flex-col gap-10 h-full justify-center">
+<div class="flex flex-col gap-10 justify-between my-5">
 	<div class="p-5 bg-slate-800 rounded-2xl flex flex-col gap-5">
 		<p class="text-center">Select the meaning of the following name of Allah:</p>
 		<p class="text-center text-[2rem]">{selctedName.name}</p>
@@ -90,7 +90,7 @@
 		{/each}
 	</div>
 
-	<button on:click={confirmChoice} class="btn !bg-teal-600 mx-auto min-w-[50%] max-w-[500px]"
-		>Confirm</button
-	>
+	<button on:click={confirmChoice} class="btn !bg-teal-600 mx-auto min-w-[50%] max-w-[500px]">
+		Confirm
+	</button>
 </div>
