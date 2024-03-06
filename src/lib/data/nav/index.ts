@@ -33,7 +33,7 @@ export const navItems: NavItemType[] = [
 	homeNavItem,
 	quranNavItem,
 	namesOfAllahNavItem,
-	dhikrNavItem,
+	// dhikrNavItem,
 	settingsNavItem,
 	creditsNavItem
 ];
