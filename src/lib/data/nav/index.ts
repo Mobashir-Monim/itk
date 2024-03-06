@@ -1,6 +1,7 @@
 import { quranNavItem } from './quran';
 import { namesOfAllahNavItem } from './asma-ul-husna';
 import { dhikrNavItem } from './dhikr';
+import { duaNavItem } from './dua';
 import type { NavItemType } from '$lib/types/nav';
 import NavItem from '$lib/data-structures/Nav/NavItem';
 
@@ -34,6 +35,7 @@ export const navItems: NavItemType[] = [
 	quranNavItem,
 	namesOfAllahNavItem,
 	// dhikrNavItem,
+    // duaNavItem,
 	settingsNavItem,
 	creditsNavItem
 ];
