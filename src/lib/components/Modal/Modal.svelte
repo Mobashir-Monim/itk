@@ -19,9 +19,7 @@
 		? 'h-full p-2.5 top-[60px]'
 		: 'h-[0%] p-0 top-[calc(100vh)]'}"
 >
-	<div
-		class="bg-slate-800 w-full min-h-[calc(50%-3.5rem)] max-h-[calc(80%-3.5rem)] rounded-2xl p-2.5 flex flex-col"
-	>
+	<div class="bg-slate-800 w-full max-h-[calc(80%-3.5rem)] rounded-2xl p-2.5 flex flex-col">
 		<div class="flex flex-row justify-end">
 			<button on:click={closeModal} class="rounded-full bg-teal-500">
 				<CloseIcon size={30} />
