@@ -4,6 +4,7 @@ import type { NavItemConstructorType, NavItemType } from '$lib/types/nav';
 class NavItem implements NavItemType {
 	name: string;
 	type: 'function' | 'route' | 'placeholder';
+    placement: 'list' | 'footer';
 	display: () => Promise<boolean>;
 	subItems: NavItemType[];
 	expanded: boolean;
@@ -14,6 +15,7 @@ class NavItem implements NavItemType {
 	constructor({
 		name,
 		type,
+        placement = 'list',
 		display = () =>
 			new Promise((resolve, _) => {
 				resolve(true);
@@ -28,6 +30,7 @@ class NavItem implements NavItemType {
 		this.subItems = subItems;
 		this.expanded = false;
 		this.display = display;
+        this.placement = placement;
 
 		if (type === 'route' && (!route || !params)) {
 			throw new Error('Route and params must be passed for route type');

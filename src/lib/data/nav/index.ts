@@ -23,13 +23,14 @@ const settingsNavItem: NavItem = new NavItem({
 const creditsNavItem: NavItem = new NavItem({
 	name: 'Credits',
 	type: 'route',
+	placement: 'footer',
 	route: '/credits',
 	params: {},
 	subItems: []
 });
 
 export const navItems: NavItemType[] = [
-    homeNavItem,
+	homeNavItem,
 	quranNavItem,
 	namesOfAllahNavItem,
 	dhikrNavItem,

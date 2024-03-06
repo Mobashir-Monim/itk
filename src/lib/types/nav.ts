@@ -1,6 +1,7 @@
 export interface NavItemType {
 	name: string;
 	type: 'route' | 'function' | 'placeholder';
+    placement: 'list' | 'footer';
 	display: () => Promise<boolean>;
 	expanded: boolean;
 	toggleExpansion: () => void;
@@ -15,6 +16,7 @@ export interface NavItemType {
 export interface NavItemConstructorType {
 	name: string;
 	type: 'route' | 'function' | 'placeholder';
+	placement?: 'list' | 'footer';
 	display?: () => Promise<boolean>;
 	subItems: NavItemType[];
 	route?: string;
