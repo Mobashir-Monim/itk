@@ -19,7 +19,7 @@
 			[array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
 		}
 
-		return array;
+		return array.sort(() => Math.random() - 0.5);
 	};
 
 	const generateQuestion = () => {
