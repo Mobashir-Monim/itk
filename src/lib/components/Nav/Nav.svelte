@@ -6,7 +6,7 @@
 	import TopNavItem from './TopNavItem.svelte';
 	import type NavItem from '$lib/data-structures/Nav/NavItem';
 
-	let expanded: boolean = true;
+	let expanded: boolean = false;
 	let navItems: NavItem[] = nis;
 	const iconSize: number = 32;
 
