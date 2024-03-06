@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import { fly } from 'svelte/transition';
-	import TopNav from '$lib/components/Nav/TopNav.svelte';
+	import Nav from '$lib/components/Nav/Nav.svelte';
 	import NunitoFont from '$lib/assets/fonts/Nunito-VariableFont_wght.ttf';
 
 	export let data;
@@ -13,7 +13,7 @@
 </svelte:head>
 
 <main class="w-full transit relative">
-	<TopNav />
+	<Nav />
 	<div class="h-[60px]"></div>
 	{#key data.url}
 		<div
