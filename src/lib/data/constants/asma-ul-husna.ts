@@ -22,7 +22,7 @@ export const namesOfAllahAzzaWaJal: AllahsNameType[] = [
 			'The King',
 			'The Svereign Lord',
 			'The One with the complete Dominion',
-			'the One Whose Dominion is clear from imperfection'
+			'The One Whose Dominion is clear from imperfection'
 		]
 	},
 	{
@@ -759,7 +759,7 @@ export const namesOfAllahAzzaWaJal: AllahsNameType[] = [
 		name: 'As-Sabur',
 		meanings: [
 			'The Extensively Enduring One',
-			'THe Patient',
+			'The Patient',
 			'The One Who does not quickly punish the sinners'
 		]
 	}
