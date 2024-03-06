@@ -6,7 +6,7 @@
 	import TopNavItem from './TopNavItem.svelte';
 	import type NavItem from '$lib/data-structures/Nav/NavItem';
 
-	let expanded: boolean = false;
+	let expanded: boolean = true;
 	let navItems: NavItem[] = nis;
 	const iconSize: number = 32;
 
@@ -35,8 +35,8 @@
 >
 	<div
 		class="h-[60px] !z-40 flex flex-row px-3 transit {expanded
-			? 'bg-blue-700/30'
-			: 'bg-blue-500/30'} "
+			? 'bg-blue-900/50'
+			: 'bg-slate-800'} "
 	>
 		<button
 			type="button"
@@ -70,7 +70,7 @@
 			{/each}
 		</div>
 		<div
-			class="flex flex-row flex-wrap gap-3 justify-center p-5 text-gray-400 transit !duration-100 {expanded
+			class="flex flex-row flex-wrap gap-3 justify-center p-5 transit !duration-100 font-semibold tracking-widest {expanded
 				? 'text-gray-400 delay-500'
 				: 'text-transparent text-[0rem]'}"
 		>
