@@ -3,6 +3,7 @@
 	import { fly } from 'svelte/transition';
 	import Nav from '$lib/components/Nav/Nav.svelte';
 	import NunitoFont from '$lib/assets/fonts/Nunito-VariableFont_wght.ttf';
+	import Modal from '$lib/components/Modal/Modal.svelte';
 
 	export let data;
 	export const prerender = true;
@@ -24,4 +25,5 @@
 			<slot />
 		</div>
 	{/key}
+	<Modal />
 </main>
