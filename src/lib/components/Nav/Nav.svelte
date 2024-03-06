@@ -54,9 +54,10 @@
 	</div>
 
 	<div
-		class="h-[calc(100vh-60px)] transit relative bg-slate-800/90 overflow-y-auto nsb max-w-[500px] {expanded
+		class="h-[calc(100vh-60px)] transit relative bg-slate-800/90 overflow-y-auto nsb max-w-[500px] flex flex-col justify-between {expanded
 			? 'w-[100vw]'
 			: 'w-[0vw]'}"
+		use:autoAnimate
 	>
 		<div
 			class="flex flex-col gap-5 p-10 overflow-x-hidden overflow-y-auto transit !duration-200 {expanded
@@ -64,7 +65,16 @@
 				: 'text-transparent text-[0rem]'}"
 			use:autoAnimate
 		>
-			{#each navItems as item}
+			{#each navItems.filter((n) => n.placement === 'list') as item}
+				<TopNavItem navItem={item} depth={0} {toggleExpansion} isExpanded={expanded} />
+			{/each}
+		</div>
+		<div
+			class="flex flex-row flex-wrap gap-3 justify-center p-5 text-gray-400 transit !duration-100 {expanded
+				? 'text-gray-400 delay-500'
+				: 'text-transparent text-[0rem]'}"
+		>
+			{#each navItems.filter((n) => n.placement === 'footer') as item}
 				<TopNavItem navItem={item} depth={0} {toggleExpansion} isExpanded={expanded} />
 			{/each}
 		</div>

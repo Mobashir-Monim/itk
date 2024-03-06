@@ -8,7 +8,7 @@
 	export let depth: number = 0;
 	export let isExpanded: boolean;
 
-	let shouldShow: boolean = true;
+	let shouldShow: boolean = false;
 
 	const clickNavItem = async () => {
 		if (navItem.type !== 'placeholder') {
@@ -30,7 +30,7 @@
 		{#if navItem.subItems.length}
 			<div
 				class="flex flex-col transit ml-7 !duration-300 {navItem.expanded && isExpanded
-					? 'max-h-[400px] text-[1rem] text-white'
+					? 'max-h-[400px] text-[1rem]'
 					: 'max-h-[0px] text-[0rem] text-transparent '}"
 			>
 				{#each navItem.subItems as subItem}
