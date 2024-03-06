@@ -14,12 +14,7 @@ export const buildQuranSettingsBlock = () =>
 				name: 'Show Transliteration',
 				key: 'transliteration',
 				type: 'toggle'
-			},
-			// {
-			// 	name: 'Show Translation',
-			// 	key: 'translation',
-			// 	type: 'toggle'
-			// }
+			}
 		]
 	});
 
@@ -51,11 +46,29 @@ export const buildDhikrSettingsBlock = () =>
 				key: 'transliteration',
 				type: 'toggle'
 			},
-			// {
-			// 	name: 'Show Translation',
-			// 	key: 'translation',
-			// 	type: 'toggle'
-			// },
+			{
+				name: 'Show Benefits',
+				key: 'benefits',
+				type: 'toggle'
+			}
+		]
+	});
+
+export const buildDuaSettingsBlock = () =>
+	new SettingsBlock({
+		name: 'Dua',
+		key: 'dua',
+		items: [
+			{
+				name: 'Show Arabic Text',
+				key: 'arabic-text',
+				type: 'toggle'
+			},
+			{
+				name: 'Show Transliteration',
+				key: 'transliteration',
+				type: 'toggle'
+			},
 			{
 				name: 'Show Benefits',
 				key: 'benefits',
@@ -67,5 +80,6 @@ export const buildDhikrSettingsBlock = () =>
 export const buildSettings = () => [
 	buildQuranSettingsBlock(),
 	buildNamesOfAllahSettingsBlock(),
-	buildDhikrSettingsBlock()
+	buildDhikrSettingsBlock(),
+	buildDuaSettingsBlock()
 ];
