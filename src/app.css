@@ -15,6 +15,25 @@ body {
 	@apply bg-slate-700 text-white transit font-[Nunito] !tracking-widest font-extralight;
 }
 
+body,
+div,
+p,
+span,
+a,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+select,
+textarea,
+label {
+	@apply tracking-widest;
+}
+
 .nsb::-webkit-scrollbar {
 	display: none !important;
 }

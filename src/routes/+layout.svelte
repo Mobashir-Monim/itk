@@ -6,13 +6,16 @@
 	import Modal from '$lib/components/Modal/Modal.svelte';
 	import { onMount } from 'svelte';
 	import { StatusBar, Style } from '@capacitor/status-bar';
+	import { Device } from '@capacitor/device';
 
 	export let data;
 	export const prerender = true;
 
 	onMount(async () => {
-        await StatusBar.hide();
-    });
+		if ((await Device.getInfo()).platform !== 'web') {
+			await StatusBar.hide();
+		}
+	});
 </script>
 
 <svelte:head>
