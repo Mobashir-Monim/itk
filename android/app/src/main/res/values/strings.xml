@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">itk</string>
-    <string name="title_activity_main">itk</string>
+    <string name="app_name">Islamic ToolKit</string>
+    <string name="title_activity_main">Islamic ToolKit</string>
     <string name="package_name">com.mobashirmonim.itk</string>
     <string name="custom_url_scheme">com.mobashirmonim.itk</string>
 </resources>
