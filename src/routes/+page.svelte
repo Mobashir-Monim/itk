@@ -4,6 +4,7 @@
 	import { Preferences } from '@capacitor/preferences';
 	import { continueReadingFromKey } from '$lib/constants';
 	import { goto } from '$app/navigation';
+	import ITKLogo from '$lib/assets/splash.png';
 
 	let showContinueReadingQuran: boolean = false;
 
@@ -29,7 +30,11 @@
 
 <div class="flex flex-col gap-5 w-full h-full justify-center" use:autoAnimate>
 	<div class="flex flex-col gap-5 bg-slate-800 p-5 rounded-2xl w-full max-w-[500px] mx-auto">
-		<h1 class="text-[2rem] text-center mb-14">Islamic ToolKit</h1>
+		<div class="my-5 flex flex-col gap-10">
+			<img src={ITKLogo} class="w-[30%] mx-auto drop-shadow-[0px_0px_15px]" alt="ITK logo" />
+			<h1 class="text-[2rem] text-center">Islamic ToolKit</h1>
+		</div>
+
 		<a href="/quran" class="text-[1.2rem] btn !bg-teal-500/50">Quran</a>
 		{#if showContinueReadingQuran}
 			<button on:click={continueReading} class="text-[1.2rem] btn !bg-teal-500/50">
