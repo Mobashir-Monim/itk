@@ -12,9 +12,11 @@
 	export const prerender = true;
 
 	onMount(async () => {
-		if ((await Device.getInfo()).platform !== 'web') {
-			await StatusBar.hide();
-		}
+		const platform = (await Device.getInfo()).platform;
+		// if (platform !== 'web') {
+		await StatusBar.hide();
+		if (platform === 'android') StatusBar.setOverlaysWebView({ overlay: true });
+		// }
 	});
 </script>
 
