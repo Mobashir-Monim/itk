@@ -13,10 +13,10 @@
 
 	onMount(async () => {
 		const platform = (await Device.getInfo()).platform;
-		// if (platform !== 'web') {
-		await StatusBar.hide();
-		if (platform === 'android') StatusBar.setOverlaysWebView({ overlay: true });
-		// }
+		if (platform !== 'web') {
+			await StatusBar.hide();
+			if (platform === 'android') StatusBar.setOverlaysWebView({ overlay: true });
+		}
 	});
 </script>
 
