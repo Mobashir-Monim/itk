@@ -22,7 +22,6 @@
 		return isNaN(verse) ? 0 : verse < 0 || verse >= surah.verses.length ? 0 : verse;
 	};
 
-	let introDiv: HTMLElement;
 	let surah: SurahType = surahs[getSurahNo()];
 	let quranBlockSettings: SettingsBlock;
 	let arabic: boolean;
@@ -127,7 +126,7 @@
 		use:autoAnimate
 	>
 		{#if quranBlockSettings === undefined}
-			<div class="flex flex-col bg-blue-400/20 rounded-2xl p-5" bind:this={introDiv}>
+			<div class="flex flex-col bg-blue-400/20 rounded-2xl p-5">
 				<div class="mb-10">
 					<h3 class="text-[1.8rem] text-center border-b-2">{surah.name.name}</h3>
 					<h4 class="text-[1.5rem] text-center mt-3">{surah.name.meaning}</h4>
