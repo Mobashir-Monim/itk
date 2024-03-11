@@ -33,17 +33,17 @@
 	let transliteration: boolean;
 	let showVerse: boolean = true;
 	$: verse = getVerseNo();
-	$: hasSajdah =
-		sajdhas.filter((sajdha) => sajdha.entry === surah.name.entry && sajdha.verse === verse).length >
-		0;
+	$: hasSajdah = sajdhas.find(
+		(sajdha) => sajdha.entry === surah.name.entry && sajdha.verse === verse
+	);
 
 	onMount(async () => {
-		// setTimeout(async () => {
-		quranBlockSettings = buildQuranSettingsBlock();
-		arabic = (await quranBlockSettings.getValue('arabic-text')) as boolean;
-		transliteration = (await quranBlockSettings.getValue('transliteration')) as boolean;
-		setVerse(verse);
-		// }, 2000);
+		setTimeout(async () => {
+			quranBlockSettings = buildQuranSettingsBlock();
+			arabic = (await quranBlockSettings.getValue('arabic-text')) as boolean;
+			transliteration = (await quranBlockSettings.getValue('transliteration')) as boolean;
+			setVerse(verse);
+		}, 2000);
 	});
 
 	const prevAction = () => {
