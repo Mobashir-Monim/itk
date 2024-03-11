@@ -1,7 +1,7 @@
 <script lang="ts">
 	import {
 		surahs,
-		surahNames,
+		sajdhas,
 		type SurahNameType,
 		type SurahType
 	} from '$lib/data/constants/quran/surahs';
@@ -32,15 +32,18 @@
 	let arabic: boolean;
 	let transliteration: boolean;
 	let showVerse: boolean = true;
-	let verse: number = getVerseNo();
+	$: verse = getVerseNo();
+	$: hasSajdah =
+		sajdhas.filter((sajdha) => sajdha.entry === surah.name.entry && sajdha.verse === verse).length >
+		0;
 
 	onMount(async () => {
-		setTimeout(async () => {
-			quranBlockSettings = buildQuranSettingsBlock();
-			arabic = (await quranBlockSettings.getValue('arabic-text')) as boolean;
-			transliteration = (await quranBlockSettings.getValue('transliteration')) as boolean;
-			setVerse(verse);
-		}, 2000);
+		// setTimeout(async () => {
+		quranBlockSettings = buildQuranSettingsBlock();
+		arabic = (await quranBlockSettings.getValue('arabic-text')) as boolean;
+		transliteration = (await quranBlockSettings.getValue('transliteration')) as boolean;
+		setVerse(verse);
+		// }, 2000);
 	});
 
 	const prevAction = () => {
@@ -113,8 +116,7 @@
 						step="1"
 						value={verse + 1}
 						class="bg-slate-600 rounded-lg inline w-[40px] px-1 text-center"
-						on:keyup={gotoVerse}
-						on:focusout={gotoVerse}
+						on:change={gotoVerse}
 					/>
 					<span class="my-auto">&nbsp;/ {surah.verses.length}</span>
 				</div>
@@ -140,6 +142,15 @@
 				</div>
 			</div>
 		{:else if showVerse}
+			{#if hasSajdah}
+				<div
+					class="bg-gradient-to-tr from-amber-600 to-rose-500 px-5 rounded-full text-center mx-auto flex flex-row gap-5"
+				>
+					<span class="text-[30px]">۩</span>
+					<span class="my-auto">Sajdah</span>
+					<span class="text-[30px]">۩</span>
+				</div>
+			{/if}
 			{#if arabic}
 				<div>
 					<p
