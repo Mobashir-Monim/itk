@@ -1,10 +1,5 @@
 <script lang="ts">
-	import {
-		surahs,
-		sajdhas,
-		type SurahNameType,
-		type SurahType
-	} from '$lib/data/constants/quran/surahs';
+	import { surahs, sajdhas, type SurahType } from '$lib/data/constants/quran/surahs';
 	import SettingsBlock from '$lib/data-structures/Settings/SettingsBlock';
 	import { buildQuranSettingsBlock } from '$lib/data/settings';
 	import { page } from '$app/stores';
@@ -13,6 +8,7 @@
 	import autoAnimate from '@formkit/auto-animate';
 	import { Preferences } from '@capacitor/preferences';
 	import { continueReadingFromKey } from '$lib/constants';
+	import ChevronIcon from '$lib/assets/icons/ChevronIcon.svelte';
 
 	const getSurahNo = () => {
 		let surahNo: number = parseInt($page.params.surah_no);
@@ -182,16 +178,22 @@
 	{#if quranBlockSettings !== undefined}
 		<div class="h-[60px] relative w-full flex flex-row justify-between mt-auto shrink-0">
 			<div
-				class="absolute left-[-1.25rem] w-[calc(100%+2.5rem)] px-5 h-[60px] bg-black/20 flex flex-row justify-between"
+				class="absolute left-[-1.25rem] w-[calc(100%+2.5rem)] px-5 h-[60px] bg-black/20 flex flex-row justify-between font-mono text-[0.8rem]"
 			>
 				<div class="my-auto w-[33%] flex flex-row justify-start">
-					<button on:click={prevAction} class="btn btn-primary">Prev</button>
+					<button on:click={prevAction} class="btn btn-primary flex flex-row gap-0 !py-1 !pl-0">
+						<ChevronIcon direction="left" classes="my-auto fill-white stroke-2" size={30} />
+						<span class="my-auto">Prev</span>
+					</button>
 				</div>
 				<!-- <div class="my-auto w-[33%] flex flex-row justify-center">
 					<button class="btn btn-primary mx-auto">Bookmark</button>
 				</div> -->
 				<div class="my-auto w-[33%] flex flex-row justify-end">
-					<button on:click={nextAction} class="btn btn-primary">Next</button>
+					<button on:click={nextAction} class="btn btn-primary flex flex-row gap-0 !py-1 !pr-0">
+						<span class="my-auto">Next</span>
+						<ChevronIcon direction="right" classes="my-auto fill-white stroke-2" size={30} />
+					</button>
 				</div>
 			</div>
 		</div>
