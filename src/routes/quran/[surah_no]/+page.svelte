@@ -120,7 +120,7 @@
 		</div>
 	{/if}
 	<div
-		class="min-h-[calc(100%-140px)] flex flex-col gap-5 overflow-y-auto nsb py-5 {quranBlockSettings ===
+		class="min-h-[calc(100%-140px)] flex flex-col gap-5 overflow-y-auto nsb p-5 {quranBlockSettings ===
 		undefined
 			? 'justify-center'
 			: 'justify-start'} "
@@ -150,8 +150,8 @@
 			{#if arabic}
 				<div>
 					<p
-						class="min-h-[150px] p-3 bg-blue-500/30 rounded-2xl text-justify"
-						style="direction: rtl; font-size: 25px"
+						class="min-h-[20vh] p-3 bg-blue-500/30 rounded-2xl text-justify shadow-[5px_5px_10px_2.5px_rgba(0,0,0,0.3)]"
+						style="direction: rtl; font-size: 22px"
 					>
 						{surah.verses[verse].arabic}
 					</p>
@@ -161,7 +161,7 @@
 				<div class="">
 					<p class="text-[0.8rem] ml-2">Transliteration</p>
 					<p
-						class="min-h-[150px] p-3 bg-gradient-to-tr from-blue-500/30 to-teal-500/30 rounded-2xl"
+						class="min-h-[20vh] p-3 bg-gradient-to-tr from-blue-500/30 to-teal-500/30 rounded-2xl shadow-[5px_5px_10px_2.5px_rgba(0,0,0,0.3)] text-justify tracking-normal"
 					>
 						{surah.verses[verse].transliteration}
 					</p>
@@ -169,7 +169,9 @@
 			{/if}
 			<div class="">
 				<p class="text-[0.8rem] ml-2">Translation</p>
-				<p class="min-h-[150px] p-3 bg-teal-500/30 rounded-2xl">
+				<p
+					class="min-h-[20vh] p-3 bg-teal-500/30 rounded-2xl shadow-[5px_5px_10px_2.5px_rgba(0,0,0,0.3)] text-justify tracking-normal"
+				>
 					{surah.verses[verse].translation}
 				</p>
 			</div>
