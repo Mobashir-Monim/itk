@@ -14,20 +14,22 @@
 	let platform: DeviceInfo['platform'];
 	let clear: ReturnType<typeof setInterval>;
 
+	const statusBarWatcher = async () => {
+		if (mounted && platform !== 'web') {
+			await StatusBar.hide();
+			if (platform === 'android') StatusBar.setOverlaysWebView({ overlay: true });
+		}
+	};
+
 	$: {
-		let interval: number = mounted ? 5000 : 1000;
 		clearInterval(clear);
-		clear = setInterval(async () => {
-			if (mounted && platform !== 'web') {
-				await StatusBar.hide();
-				if (platform === 'android') StatusBar.setOverlaysWebView({ overlay: true });
-			}
-		}, interval);
+		clear = setInterval(statusBarWatcher, 5000);
 	}
 
 	onMount(async () => {
 		mounted = true;
 		platform = (await Device.getInfo()).platform;
+		await statusBarWatcher();
 	});
 </script>
 
