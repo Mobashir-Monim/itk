@@ -1,4 +1,4 @@
-<p align="center"><img src="/src/lib/assets/splash.png" width="100" alt="Islamic ToolKit" /></p
+<p align="center"><img src="/src/lib/assets/splash.png" width="100" alt="Islamic ToolKit" /></p>
 
 # Islamic ToolKit
 
