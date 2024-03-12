@@ -6,17 +6,28 @@
 	import Modal from '$lib/components/Modal/Modal.svelte';
 	import { onMount } from 'svelte';
 	import { StatusBar, Style } from '@capacitor/status-bar';
-	import { Device } from '@capacitor/device';
+	import { Device, type DeviceInfo } from '@capacitor/device';
 
 	export let data;
 	export const prerender = true;
+	let mounted: boolean = false;
+	let platform: DeviceInfo['platform'];
+	let clear: ReturnType<typeof setInterval>;
+
+	$: {
+		let interval: number = mounted ? 5000 : 1000;
+		clearInterval(clear);
+		clear = setInterval(async () => {
+			if (mounted && platform !== 'web') {
+				await StatusBar.hide();
+				if (platform === 'android') StatusBar.setOverlaysWebView({ overlay: true });
+			}
+		}, interval);
+	}
 
 	onMount(async () => {
-		const platform = (await Device.getInfo()).platform;
-		if (platform !== 'web') {
-			await StatusBar.hide();
-			if (platform === 'android') StatusBar.setOverlaysWebView({ overlay: true });
-		}
+		mounted = true;
+		platform = (await Device.getInfo()).platform;
 	});
 </script>
 
