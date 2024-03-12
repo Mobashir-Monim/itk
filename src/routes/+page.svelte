@@ -29,7 +29,9 @@
 </script>
 
 <div class="flex flex-col gap-5 w-full h-full justify-center" use:autoAnimate>
-	<div class="flex flex-col gap-5 bg-slate-800 p-5 rounded-2xl w-full max-w-[500px] mx-auto">
+	<div
+		class="flex flex-col gap-5 bg-slate-800 p-5 rounded-2xl w-full max-w-[500px] mx-auto shadow-[5px_5px_10px_2.5px_rgba(0,0,0,0.3)]"
+	>
 		<div class="my-5 flex flex-col gap-10">
 			<img
 				src={ITKLogo}
