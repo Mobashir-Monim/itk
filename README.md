@@ -2,7 +2,7 @@
 
 # Islamic ToolKit
 
-The Islamic ToolKit app has been developed by (Mobashir Monim)[https://www.mobashirmonim.com] and is intended to be a free app which does not require users to make any payments or watch any ads.
+The Islamic ToolKit app has been developed by [Mobashir Monim](https://www.mobashirmonim.com) and is intended to be a free app which does not require users to make any payments or watch any ads.
 
 To read about our [Privacy Policy click here](/PrivacyPolicy.md)
 
